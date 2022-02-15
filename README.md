@@ -32,7 +32,11 @@
 
 ## 👨🏻‍🏫 Mentoria
 
-- <a href="https://github.com/felipemotarocha">Dicasparadevs<a/>
+- <a href="https://github.com/omariosouto">Mario Souto<a/>
+- <a href="https://github.com/juunegreiros">Juliana Negreiros<a/>
+- <a href="https://github.com/peas">Paulo Silveira<a/>
+
+
 
 ## ⚠️ Módulos Importantes e Aprendizagem 🌱 
     [ ] Módulo 01: Conceitos de Components
