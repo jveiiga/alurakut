@@ -1,84 +1,64 @@
-# Example app with styled-components
+<h1 align="center">Project Alurakut &nbsp⭕️<h1/>
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+ <img alt="GitHub" src="https://img.shields.io/github/license/jveiiga/to-do-list">
+ <img alt="GitHub" src="https://img.shields.io/badge/jveiiga-project%20to do list-red">
+ 
+<h3 align="center"><a target="_blank" href="https://www.youtube.com/watch?v=ErjWNvP6mko">Layout Project</a><h3/> 
+<h3 align="center">Projeto finalizado com o intuito de aprimorar minha base de conhecimento.<h3/>
+<h3 align="center">Não foi levado em consideração conceitos Mobile First.<h3/>
+<h3 align="center">Foi levado em consideração HTML semântico.<h3/>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
-
-## Preview
-
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-### Try it on CodeSandbox
-
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
+<h2 align="center"><a href="https://to-do-list-jveiiga.vercel.app/" alt="To do list" target="_blank">Clique aqui para ver meu projeto final!<a/><h2/> 
+  
+## 🖥  Imagem
 
 <details>
-<summary>Click to expand workaround example</summary>
-<br />
+  
+<summary>Clique para ver imagens do projeto</summary>
+  
+![project-to-do-list](https://user-images.githubusercontent.com/57195630/128089080-762b147c-06e9-4b3c-9b6a-4e5c2c947e00.png)
+![project-to-do-list-checked](https://user-images.githubusercontent.com/57195630/128094093-8034c334-ca9c-437a-a3e5-3f23a6af8804.png)
 
-**components/StyledLink.js**
+</details>  
+  
+##
+  
+## 🌐 Linguagens e tecnologias utilizadas
 
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
+<a href="https://github.com/jveiiga/project-anima/blob/main/index.html" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"  alt="html5" width="40" height="40" /> <a/> 
+<a href="https://github.com/jveiiga/project-anima/blob/main/style.css" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /> </a> 
+<a href="" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="figma" width="40" height="40" /> </a>
+<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> 
 
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
+## 👨🏻‍🏫 Mentoria
 
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+- <a href="https://github.com/felipemotarocha">Dicasparadevs<a/>
 
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+## ⚠️ Módulos Importantes e Aprendizagem 🌱 
+    [ ] Módulo 01: Conceitos de Components
+    [ ] Módulo 02: Creact React App
+    [ ] Módulo 03: Entendendo um projeto React
+    [ ] Módulo 04: Criando Components
+    [ ] Módulo 05: Utilizando JSX
+    [ ] Módulo 06: Organização do projeto
+    [ ] Módulo 07: Entendendo useState
+    [ ] Módulo 08: Entendendo Props
+    [ ] Módulo 09: Eventos de Click 
+    [ ] Módulo 10: Utilzando lib react-icon
+    [ ] Módulo 11: Entendendo React Router Dom
+    [ ] Módulo 12: Parâmetros de URL
+    [ ] Módulo 13: Conceitos de axios e useEffect
+ 
+ ## 
+ ## <h3>🤓 Aprender<h3/>
+ 
+    - Trabalhar com Props(Propriedade) e Params(Parâmetro)
+    - Utilizar rotas com React Router Dom
+    - Implementações por Id
+    - Aprimorar habilidades com Hooks(useState, useEffect, useHistory)
+    - Entender melhor como funciona os verbos HTTP, Fetch e Api
+    
+ ## Desafio
+    - Trabalhar com React Mobile First
+   
+  
